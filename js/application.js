@@ -1,9 +1,15 @@
-var num = 11;
+var num = 4;
 var numsq = num*num;
-var sqD = 960 / num; //dimensions of the squares
+var sqD = 200 / num; //dimensions of the squares
 var gridS = sqD * num + 0.01; //so as rounding errors don't result in non sqaure grids
 
-$(document).ready( defaultG );
+$(document).ready(function(){
+    defaultG();
+    $("#reset").on("click", function(){
+        reset();
+    });
+   
+});
 
 function defaultG(){
     $("#grid").css({"width": gridS, "height": gridS});
@@ -15,4 +21,8 @@ function defaultG(){
         $(this).addClass("highlighted");
     });
 }
+
+function reset(){
+    $("#grid").find(".square").removeClass("highlighted");
+};
     
