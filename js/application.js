@@ -1,4 +1,4 @@
-var num = 64;
+var num = 16;
 var numsq; //total number of squares
 var sqD; //size in pixels of squares
 var gridS; //size of grid, not quite fixed so as to overcome rounding errors
@@ -19,7 +19,7 @@ $(document).ready(function(){
 
 function initialise(){
     numsq = num*num;
-    sqD = 960 / num; //dimensions of the squares
+    sqD = 600 / num; //dimensions of the squares
     gridS = sqD * num + 0.01; //so as rounding errors don't result in non sqaure grids
 }
 
