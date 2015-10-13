@@ -49,7 +49,7 @@ function reset(){
 };
     
 function newGrid(){
-    num = window.prompt("Testing", num);
+    num = window.prompt("Enter the number of squares per side:", num);
     if(!num){ //if NULL, ie if cancel pressed
         return; //highlightMode();
     }
