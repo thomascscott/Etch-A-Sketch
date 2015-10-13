@@ -8,8 +8,14 @@
 	<body>
 		<div id="wrapper">
 			<div id="controls">
-            <button type="button" id="newGrid">Grid Size</button>
-            <button type="button" id="reset">Reset</button>
+                <form>
+                    <button type="button" id="newGrid">Grid Size</button>
+                    <button type="button" id="reset">Reset</button>
+                    ||
+                    <input type="radio" name="mode" value="black" checked>Black
+                    <input type="radio" name="mode" value="coloured">Coloured
+                    <input type="checkbox" name="deepen" value="deep">Deepen Mode
+                </form>
 			</div>
 			<div id="grid">
 			</div>
